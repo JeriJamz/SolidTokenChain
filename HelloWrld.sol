@@ -1,13 +1,15 @@
-//This is the first of many
-prgma solidity >= 0.4.16 < 0.0.9;
+//This is the first of many Also basiic from the books but 
+//pay attention its memory address and authication not matter how simple
+// Thi supposed to do transfers... Lets if the solidity documentation worth something
+pragma solidity ^0.8.26;
 
 contract HelloWrldStor{
     unit storedData
 
     string public welcome = "Hello World"
-    function set(uint x) public{
+    function set(uint address) public{
 
-        storedData = x //an unsigned int so all postives
+        storedData = address //an unsigned int so all postives
     
     }
 
@@ -15,6 +17,42 @@ contract HelloWrldStor{
 
         return storedData; //lines 5-17 is a skel to return stored data
     
+    }
+
+    contract Coin{
+
+        address public minter; //public makes variable... Yes that verbatim
+        mapping(address => uint) public balances;//data pipeline to other address
+
+        event sent(address from, address to, uint amount);//These event need user input along wit data
+        //constructor only runs when making a new contract or after a transaction
+        constructor(){
+
+            minter = msg.sender;
+
+        }
+
+        //ok so this is like a limit check 
+        //only called by contract creator
+        fuction mint(address reciever, uint amount) public{
+
+            require(msg.sender == minter);
+            balance[receiver] += amount;
+
+        }
+
+        error InsufficientBalance(uint requested, uint available);
+
+
+        function send(address reciever, uint amount) public{
+
+            require(amount <= balance[msg.sender], InsufficiientBalance(amount, balances[msg.sender]));
+            balances[msg.sender] -= amount;
+            balances[reciever] += amount;
+            emit sent(msg.sender, reciever, amount);
+
+        }
+
     }
 
 }
