@@ -1,6 +1,7 @@
 //This is the first of many Also basiic from the books but 
 //pay attention its memory address and authication not matter how simple
-// Thi supposed to do transfers... Lets if the solidity documentation worth something
+// This supposed to do transfers... Lets if the solidity documentation worth something
+//*************COMPLIE AT YOUR OWN RISK************************
 pragma solidity ^0.8.26;
 
 contract HelloWrldStor{
