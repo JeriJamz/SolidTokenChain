@@ -1,0 +1,13 @@
+#might as well start on curves
+
+* y**2 = x**3+ax+b #I think this is the standard elyptic curve
+#nice reminder y = mx + b is just a line
+*elyptic curves use two curvatures instead of one. #think thats what make this encryption a little more diffrent
+    -they dont always have to connect
+        +its called disjoint
+    -cubic equations can also make an elyptic curve#I like this spelling better
+#bit-coin use y**3 + x**2 + 7(still trying to figure how this is encryprion)
+    -there another form called connical:
+        y**2 = x**x+ax+b :
+            a is the constant #bitcoin got it where it is sat as 0
+            b is 7 #is the tech a private variable that cant be change by the user? private void b???
