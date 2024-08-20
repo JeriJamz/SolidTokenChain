@@ -1,0 +1,20 @@
+#really just thing I need to remember for Solid like...
+*"Address" a unique indentfier that repersent the user on the blockchain
+"mapping" just solidity version of a dictionary
+"constructor" is called to make new contract and cannot be called otherwise
+"msg" a special global variable that contains properties to #*I think your personal blockchain Idk yet*# the blockchain
+"Mint" sends an amount of new of tokens you want to send out
+"send"#Ima assume means you want to SEND out tokens but ima leave it a comment til kill confirm
+"require" this pretty simple but got a catch. Its in the name but its basically a sp! of special condition that moves the stack to its own indepent eviorment and push or pop depending if all conditions are met
+#*
+Ok Ok I gots to add this
+(msg.sender==minter)
+this line ensures whoever is the creator of this newblock chain can mint new tokens...
+New lauches gone love this LMAOOO #side comment where my memes at?
+*#
+#*SOLIDITY GOT A BUFFEROVERFLOW LMAOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO THERES MINIMAL CHECK
+
+The Furry hackers gone loves this LMAOOOO WHERE MY MEME
+
+*#
+
