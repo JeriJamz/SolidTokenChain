@@ -1,6 +1,7 @@
 #try this again elyptic curve!
 #im testing stuff so expect bugs
-import sys,time
+#i dont remember pprint wait for the next version LMAO
+import sys,time,pprint
 
 def TimePut(q):
     for s in q:
@@ -24,9 +25,17 @@ class point:#ok ok the point class make the 2 ends points and two curve points p
         return self.x == other.x and self.y == other.y/#so I can remember the /
         and self.a == other.a and self.b == other.b and self.s == other.s 
 
-    def add(self, other):#this so you can get other points involves but I gotta work on the UserNput so...
+    def add(self,other,open,openTwo):#this so you can get other points involves but I gotta work on the UserNput so...
         if self.a != other.a or self.b != other.b:
             raise ValueError(f'Points {},{} are not the same curve'.format(self,other))
+
+        TimePut(f'Enter two Diffrent point',/
+               ,'Point One <Enter>')
+        response = int(input())
+        response == self.open
+        TimePut(f'Please Enter Point Two',/,
+               '<Enter>')
+        responeTwo = int(input({self.openTwo}))
 
     if self.x is None:
         return other.x
@@ -40,16 +49,44 @@ class point:#ok ok the point class make the 2 ends points and two curve points p
             'Or its Buggy'))
 
     def MissingMyLastX(self,other):
-        if self.x3 != other.x3:
+                
+        while self.x == None and self.s == None and/
+        self.x2 == None and self.x3 == None:
+            if PointAddSlope() == None:
+                raise ValueError(TimePut(('Need a slope',/,'or Possble Bugg?'))
+                usN()#should I return this?
+                
+            TimePut(f'want to make a thrid point')
+            LastxReson = input()
+            if 
             
-   def usN(self,open, openTwo):#this my personal class I think this take user input
+   def usN(self):#this my personal class I think this take user input
+
+        Forms = {'(1) ':'<Add>','(2) ':'<Point Add Slope>','(3) ':'<MissingMyLastX>'}
        
-        TimePut(f'Enter two Diffrent point',/
-               ,'Point One <Enter>')
-        response = int(input())
-        response == self.open
-        TimePut(f'Please Enter Point Two',/,
-               '<Enter>')
-        responeTwo = int(input({self.openTwo}))# I think this is valid whole time LMAOOOOO
+        pprint.pp(Forms.value)
+        TimePut('>Type In a Number<')
+        userNput = input(int())
+        while userNput not in range(int(0,2)):
+            return TimePut('>Type In a Number<')
+
+        if userNput == 1:
+            add()
+        elif userNput == 2:
+            PointAddSlope()
+        elif userNput == 3:
+            MissingMyLastX()
+        else:
+            print('Would you like to <Exit>?')
+            userNput2 = input()
+            if userNput.lower() == 'Yes':
+                sys.exit()
+            else:
+                usN()
+    
+    MissingMyLastX()
         
+
+#im not importing nun
+usN()
 #see if i can get some user input I can't run it some compile at yo own risk.
