@@ -31,4 +31,19 @@ Now im just brushing up on math:
 Associativity:... Nope Noooooope Just figure this Point addition Mathmatical Operations that can reflect and mirrage image another formula
 *#     
 
+#*
 
+Ok Ok here we go
+In some of these curves X!=x2 which is a nucence
+There a formula that were about to over complicate:#its a slope formula but the points are equal ohhhhh imaginary math>>>DUH DUH DUUUUUUHHHHH
+    P1(x1,y1), P2(x2,y2), P3(x3,y3)
+    P1+P2=P3
+    S = (y2-y1)/(x2-x1)
+
+    you can use the slope(s-tier) to figure x3... bc math just wait 
+    x3 =s**2(this is the bull) -x1 -x2
+    y3 = s(x1-x3) - y1#even mathier So Mathy...
+
+
+
+*#
