@@ -20,8 +20,8 @@ class point:#ok ok the point class make the 2 ends points and two curve points p
             raise ValueError('{},{} dont fit the scheme'.format(x,y))
 
     def eq(self,other):#other... python is the real abstraction
-        return self.x == other.x and self.y/#so I can remember the /
-        and self.a and self.b
+        return self.x == other.x and self.y == other.y/#so I can remember the /
+        and self.a == other.a and self.b == other.b
 
     def add(self, other):#this so you can get other points involves but I gotta work on the UserNput so...
         if self.a != other.a or self.b != other.b:
