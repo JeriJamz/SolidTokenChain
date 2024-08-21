@@ -11,3 +11,24 @@
         y**2 = x**x+ax+b :
             a is the constant #bitcoin got it where it is sat as 0
             b is 7 #is the tech a private variable that cant be change by the user? private void b???
+#noice note to remember Point math start as P1(x1,y1),P2(x1,y1)
+#we getting into math so here
+(1) Point Math:
+    Points in Elyptic curves are meh. Grab two points btw the curve:#books says they addition points so A & B
+        to find a third point. Draw a stright line and find the interception:#this is point C
+            The 4th point and just reflected over the thrid point#This is point AB
+#*
+*I love Math has laws so I can always check myself
+*A+B should be on the right of the graph
+*A+C should be in between A & C on the X-Axis
+*The Sum of B+C would have both points on the left(negative) side of the graph#Easy Law
+*#
+#*
+Now im just brushing up on math:
+*Identity: There is a 0 thats is a root constant that when added to another varibale or integer, you result in no decramentation or incramention
+*invertablity: Simple The balance. If it is a postive you should be able to find its negation.(Negative Number). When adding the two. The sum should result in the root number or indentifier constant
+*Commutativity: Another simple one. When a Mathmatical Operations has addition or multiplication operands and intergers(Keep It in the unsigned ranged) No matter the order you should yeild constant results
+Associativity:... Nope Noooooope Just figure this Point addition Mathmatical Operations that can reflect and mirrage image another formula
+*#     
+
+
