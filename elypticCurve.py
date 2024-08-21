@@ -41,9 +41,8 @@ class point:#ok ok the point class make the 2 ends points and two curve points p
         TimePut(f'Please Enter Point Two',/,
                '<Enter>')
         responeTwo = int(input({self.openTwo}))# I think this is valid whole time LMAOOOOO
-        
-        
-        
+
+    def SlopePoint(self,other):
+        if self.
         
 #see if i can get some user input I can't run it some compile at yo own risk.
-            
