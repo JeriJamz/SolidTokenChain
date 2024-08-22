@@ -52,8 +52,42 @@ the External account need external input from something and can transfer softwar
         Payloads are super important. Its the Badge the receipt. THE PAPERWORK. Its actual data you want sent from your account to the other... Its treated as input data... Here
 
 #[Sender(Output)]>data>data>BOOM Payload(Inputdata) > InToo>[Here]
+#this is also meant to be ByteCode which noice to always check fo. Also it isnt yo actual contract just a verifier in a way
         Ok this is fun when there is no reciever. That program "Mints" a new contract
         "Nonce" Is a memory address deriving from the:
             Address of the sender and the number of transactions that is being preformed
 
-            
+    -Gas:
+        |Tax| Basically a tax thats paid to an orginator of whatever block of what ever chain.
+#heres a line (tx.orgin)lol tax.toOrgin
+        Gas is not smokey... so its paid to whoever discovered the coin. Its tech a compensation. It has a Gas Limit
+#how its set fuck knows but god
+        Each transaction from this chain is supposed to pay the tax and help die down the cost
+        #My main wonder is if the gas is used up can you still use the chain... prolly its just you dont have to pay the miner anymore
+
+    -StoMemStack:
+        Storage is the 256-bit string that is called "storage":
+            stays in btw two modes Transactions and Fuction Calls#PHP?
+            Storage#*Lets say Variables*# are not priortize so keep it to a minimum...Pointer?
+            Sole contracts can only mutate thier data storage
+        Memory:
+            Dude its DDRAM... or worse VRAM...Super volitile and limited:
+            reads 256-bits so the storage and writes 256 or 8 bits long
+            Over using Memory especially bc of storage leads to higher Taxes(aint saying gas)#Scales quadradically... why?
+        Stack:
+            ...EVM is an EVM and not a Kernal so ya kno Stack it ontop of your OS and BOOM its Kali Linux
+            Specs:
+                1024 element limit...bits?
+                256-bits are used already to read your contract
+                theres 16 Elements you can gain access two(IK):
+                    you can get access and start to push pop and swap things
+#*
+************************SIDENOTE***************************
+
+Message calls pay people who aint got a contract and watnot
+
+SO if an exception happens in the innercall thier is an excpetion that basically acts as a plug and needs 
+Mannul love from a neckbeard LMAO magine that
+the term is "Bubble Up The Stack"... til ya poke it
+...finna program brb
+*#
