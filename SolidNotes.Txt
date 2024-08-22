@@ -18,3 +18,42 @@ The Furry hackers gone loves this LMAOOOO WHERE MY MEME
 
 *#
 
+*BlockChain Basics:
+    Its going to tell on you. Its a database with public output. Its called a ledger
+    There is mutable data like ownership. One way to change data on the chains is to have a transaction:
+        That everyone on the blockchain agree with
+        Once a transaction is set it becomes and inmutable? Unmutable data type
+        All transactions are signed cryptically by the sender
+    -Blocks:
+        "Double-Spend Attacks" are an obvious vulnarblity to the program. Due to validation-checks and strain of the system. When two transactions what to empty an account; The problem arise:
+            Usally the first request to apper to the system is the honored request but:
+                Due to well physics, friction and your internet provider. Its not guranteed the first to apper is the intial request
+#*Side note. If time Time out your home server and make a request and get it placed before yours
+can I have your account? Good things these are PUBLIC ledgers*#
+#Oh this is a bad security check thank goodness everything is public. Bc aint no regulation
+            "Attestation":
+                is where blocks in the chain are reverted for whatever reason to ease stress it catered to newer blocks. So Newbie uncle sam can audit you... I mean the chain can
+
+#*
+
+let me sum the account a lil better. The address and access tokens for contract accounts are on a peice of hardware
+the External account need external input from something and can transfer software to software... So its basically virtual. "TLDR"
+
+*#
+    -Accounts:
+        There are two type of accounts:
+            (1)"External"; which is just human controlled
+            (2)"Contract Accounts"; Which is controlled by a couple lines of code
+        Every accounts use 256-bit strings(Im not calling them words when its string values). That is called storage
+        Every account also has a balnce:
+            wei = 1 Ethrum = 10**18 wei#WTF is the currency and conversion. Thats a lot of Weis can you find a path?
+    -transactions:
+        Its the kinda-private ledger.
+        Payloads are super important. Its the Badge the receipt. THE PAPERWORK. Its actual data you want sent from your account to the other... Its treated as input data... Here
+
+#[Sender(Output)]>data>data>BOOM Payload(Inputdata) > InToo>[Here]
+        Ok this is fun when there is no reciever. That program "Mints" a new contract
+        "Nonce" Is a memory address deriving from the:
+            Address of the sender and the number of transactions that is being preformed
+
+            
