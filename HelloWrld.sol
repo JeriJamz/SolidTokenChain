@@ -20,7 +20,7 @@ contract HelloWrldStor{
     
     }
 
-    contract Coin{
+    struct Coin{
 
         address public minter; //public makes variable... Yes that verbatim
         mapping(address => uint) public balances;//data pipeline to other address
