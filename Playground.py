@@ -50,16 +50,31 @@ class point:#ok ok the point class make the 2 ends points and two curve points p
 
     def MissingMyLastX(self,other):
                 
-        while self.x == None and self.s == None and/
+        if self.x == None and self.s == None and/
         self.x2 == None and self.x3 == None:
-            if PointAddSlope() == None:
-                raise ValueError(TimePut(('Need a slope',/,'or Possble Bugg?'))
-                usN()#should I return this?
-                
-            TimePut(f'want to make a thrid point')
-            LastxReson = input()
-            if 
+            raise ValueError(f"There is not enought value points")
+            usN()
             
+        if PointAddSlope() == None:
+            raise ValueError(TimePut(('Need a slope',/,'or Possble Bugg?'))
+            usN()#should I return this?
+
+        lastXrespon = input()
+            
+        if lastXrespon.lower() == "Yes":    
+            while self.x3 == None:
+                self.s**2 -self.x2 - self.x = self.x3
+                print("Please wait while we calculate The missing Varible")
+                TimePut("..... Load")
+                print("ing ......../n",/,"|Finished|")
+                return self.x3
+
+        def TheLastY(self):#y3 = s(x(1)-x(2)) - y(1)
+
+            #bro wth I mean it works but im not using LastX bc I dont feel like its the best way to handle these equations
+            #finna work on block chain this is the 2nd major feature but I gotta gone ponder how tf
+            
+
    def usN(self):#this my personal class I think this take user input
 
         Forms = {'(1) ':'<Add>','(2) ':'<Point Add Slope>','(3) ':'<MissingMyLastX>'}
