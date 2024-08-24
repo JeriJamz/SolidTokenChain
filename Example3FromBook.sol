@@ -19,10 +19,71 @@ contract SimpleAuction{//Lets see what tips I can pick up
     event AuctionEnded(address winner, uint amount);
 
     error AuctionEndedAlready();
-    error BidNotHighEnough();
+    error BidNotHighEnough();//So this how you raise Value Error. Noice jus Noice
     error auctionNotYetEnded();
     error ActionEndAlreadyCalled();
 
-    
+    constructor(
+
+        uint biddingTime,
+        address payable beneficiaryAddress; 
+
+    ){
+
+        beneficiary =  beneficiaryAddress;
+        auctionEndTime = block.timestamp + biddingTime;
+
+    }
+
+    function bid() external payble{
+
+        if(block.timestamp > auctionEndTime)//No way time stamp is a thing. Its up from here
+            revert AuctionAlreadyEnded();
+
+        if(msg.value <= highestBid)
+            revert BidNotHighEnough(highestBid);
+
+        if(highestBid != 0){
+
+            pendingReturns[highestBidder] += highestBid;
+
+        }
+
+    highestBidder = msg.sender;
+    highestBid = msg.value;
+    emit HighestBidIncreased(msg.sender, msg.value);
+
+    }    
+
+    function withdraw() external return(bool){
+
+        uint amount =  pendingReturns[msg.sender];
+        if(amount > 0 ){
+
+            pendingReturns[msg.sender] = 0;
+            if(!payable(msg.sender).send(amount)){//Ok wtf
+
+                pendingReturn[msg.sender] = amount;
+                return false;
+
+
+            }
+
+        }
+    return true;
+    }
+
+    function auctionEnd() external{
+
+        if(block.timestamp < auctionEndTime)
+            revert AuctionedNotYetEneded();
+        if(ended)
+            revert AuctionEndAlreadyCalled();
+
+        ended = true;
+        emit AuctionEnded(highestBidder, highestBid);
+        benediciary.transfer(highestBid);
+
+    }
 
 }
