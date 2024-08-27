@@ -90,4 +90,9 @@ SO if an exception happens in the innercall thier is an excpetion that basically
 Mannul love from a neckbeard LMAO magine that
 the term is "Bubble Up The Stack"... til ya poke it
 ...finna program brb
+
+Add this in to the mix
+*I swear the struct this is just .global but in a higher level lang so...
+ima struct is a good way to make global variables
+
 *#
