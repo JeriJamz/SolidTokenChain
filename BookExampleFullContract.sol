@@ -26,7 +26,7 @@ contract SimplePaymentChannel is Frozeable{
     address payable public recipient;
     uint256 public experiation;
 
-    constructor (address payble recipientAddress, uint256 duration)//this make contract a thing
+    constructor (address payable recipientAddress, uint256 duration)//this make contract a thing
         payable{
 
             sender = payable(msg.sender); //the sender is paying
